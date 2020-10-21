@@ -1,0 +1,42 @@
+<ion-content color="azul">
+
+  <!--<div class="ion-text-center logo">
+      <img src="assets/iconpreto.png">
+    </div> ADICIONAR EM ASSETS!!! -->
+  
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title style=" text-align: center;"  color="azul">Login</ion-card-title>
+      </ion-card-header>
+  
+      <ion-card-content>
+        <ion-list>        
+            <ion-item>
+              <ion-label position="floating">E-mail</ion-label>
+              <ion-input [(ngModel)]="email" placeholder="Digite seu e-mail" type="text"></ion-input>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label position="floating">Senha</ion-label>
+              <ion-input [(ngModel)]="senha" placeholder="Digite uma senha" type="password"></ion-input>
+            </ion-item>   
+        </ion-list>
+      </ion-card-content>
+  
+      <ion-item  button class="ion-button-light ion-text-center" color="azul">
+        <ion-label color="light" (click)="login()">
+          FAZER LOGIN
+        </ion-label>
+      </ion-item>
+      <ion-button expand="full" fill="clear" color="azul" (click)="cadastrar()">
+        CRIAR UMA CONTA
+      </ion-button>
+
+      <div style="padding: 20px; text-align: center;">
+          <a (click)="esqueceuSenha()">Esqueceu a senha?</a>
+      </div>
+    </ion-card>
+
+    
+  
+</ion-content>

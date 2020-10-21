@@ -1,0 +1,30 @@
+<ion-content color="rosa">
+  <ion-card>
+    <ion-card-header style=" text-align: center;"  >
+      <ion-card-title color="rosa">Esqueceu a senha?</ion-card-title>
+      <ion-card-subtitle>Por favor, insira seu endereço de e-mail para a recuperação da senha.</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>        
+          <ion-item>
+            <ion-label>
+              <ion-icon color="rosa" name="mail"></ion-icon>
+            </ion-label>
+            <ion-input [(ngModel)]="email" placeholder="Insira seu e-mail" type="text"></ion-input>
+          </ion-item> 
+      </ion-list>
+    </ion-card-content>
+
+    <ion-item  button class="ion-button-light ion-text-center" color="rosa">
+      <ion-label color="light" (click)="recuperarSenha()">
+        ENVIAR
+      </ion-label>
+    </ion-item>
+    <ion-button expand="full" fill="clear" color="rosa" routerLink="/login" >
+      Voltar para Login
+    </ion-button>
+
+    </ion-card>
+
+</ion-content>

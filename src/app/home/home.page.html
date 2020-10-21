@@ -1,20 +1,124 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+<ion-header>
+    <ion-toolbar color="azul">
+      <ion-buttons slot="start">
+        <ion-button routerLink="/perfil">
+          <ion-icon slot="icon-only" name="person" ></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title style="text-align: center;">
+        Mundo Afora
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="logout()">
+          <ion-icon slot="icon-only" name="log-out" ></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  
+  <ion-content [fullscreen]="true">
+    <div class="inicio">
+  
+      <br>
+        <div class="info ion-text-center">
+          <h6>Conheça alguns destinos incríveis:</h6>
+       </div>
+    
+      <ion-slides [options]="options">
+  
+      <ion-slide>
+      <ion-card>
+        <ion-grid>
+          <ion-row routerLink="/canada">
+            <ion-col size="12" class="poster-col">
+              <img class="poster" src="https://www.almadeviajante.com/wp-content/uploads/lago-moraine-canada.jpg" alt="">
+            </ion-col>
+            <ion-col size="12">
+              <h5 class="ion-no-margin">Canadá</h5>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+      </ion-slide>
+  
+      <ion-slide>
+  
+      <ion-card>
+        <ion-grid>
+          <ion-row routerLink="/japao">
+            <ion-col size="12" class="poster-col">
+              <img class="poster" src="https://assets-cdn.kangaroo.com.br/images/japao/templo-to-ji-nara-japao.jpg" alt="">
+            </ion-col>
+            <ion-col size="12">
+              <h5 class="ion-no-margin">Japão</h5>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+  
+      </ion-slide>
+  
+      <ion-slide>
+      <ion-card>
+        <ion-grid>
+          <ion-row routerLink="/israel">
+            <ion-col size="12" class="poster-col">
+              <img class="poster" src="https://www.segueviagem.com.br/wp-content/uploads/2019/11/16-jerusalm-1.jpg" alt="">
+            </ion-col>
+            <ion-col size="12">
+              <h5 class="ion-no-margin">Israel</h5>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+      </ion-slide>
+  
+      <ion-slide>
+      <ion-card>
+        <ion-grid>
+          <ion-row routerLink="/espanha">
+            <ion-col size="12" class="poster-col">
+              <img class="poster" src="https://img.vixdata.io/pd/jpg-large/pt/sites/default/files/e/espanha-sonho-toledo-1117-1400x933.jpg" alt="">
+            </ion-col>
+            <ion-col size="12">
+              <h5 class="ion-no-margin">Espanha</h5>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card> 
+      </ion-slide>
+  
+      </ion-slides>
+      <br/>
+      
+      <div class="artigo" class="info ion-text-center" routerLink="/artigo">
+        <h6 class="h8">Quer saber mais sobre Intercâmbios? Criamos um artigo para te ajudar!</h6>
+        <ion-col size="5" class="imagem-artigo">
+          <p>
+           <img class="imagem" src="https://www.australiancentre.com.br/site/wp-content/uploads/2017/09/intercambio-pacotes.png">
+          </p>
+        </ion-col>
+      </div>
+  
+  
+      <ion-card routerLink="/quiz">
+        <br>
+          <div class="info ion-text-center">
+            <h6>Testando conhecimentos!</h6>
+          </div>
+        <br>
+  
+          <img src="assets/imgs/imgquiz.jpeg">
+  
+          <div class="info ion-text-center">
+            <br>
+              <ion-card-subtitle>Responda essas perguntas e descubra curiosidades incríveis sobre os países do mundo!</ion-card-subtitle>
+              <br>
+              <br>
+          </div>
+      </ion-card>
+      
+    </div>
+  </ion-content>
+  

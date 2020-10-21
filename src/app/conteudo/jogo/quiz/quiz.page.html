@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="azul">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Quiz</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fundo-azul">
+
+ <div class="fundo-branco">  
+  <ion-card>
+    <ion-card-header>
+      <img src="./assets/decolar.jpg">
+      <ion-card-subtitle>Teste seus conhecimentos</ion-card-subtitle>
+      <ion-card-title>Quiz do Mundo Afora</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Responda essas perguntas e descubra, em uma escala de 0 a 10, o quanto você conhece sobre os diferentes países do mundo!
+    </ion-card-content>
+    <ion-button expand="block" shape="round" color="rosa" (click)="comecar()">COMEÇAR!</ion-button> &nbsp;&nbsp;
+  </ion-card>
+  </div>
+
+</ion-content>
+

@@ -1,0 +1,57 @@
+<ion-content class="ion-padding" color="azul">
+
+ <!-- <div class="ion-text-center logo">
+    <img src="assets/iconpreto.png">
+  </div> ADICIONAR NOS ASSETS!!!-->
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style=" text-align: center;"  color="azul">Cadastro</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+          <ion-item>
+            <ion-label position="floating">Nome de Usuário</ion-label>
+            <ion-input [(ngModel)]="nomeUsuario" placeholder="Digite seu nome" type="text"></ion-input>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label position="floating">Nome Completo</ion-label>
+            <ion-input [(ngModel)]="nomeCompleto" placeholder="Digite seu nome completo" type="text"></ion-input>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label position="floating">E-mail</ion-label>
+            <ion-input [(ngModel)]="email" placeholder="Digite seu e-mail" type="text"></ion-input>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label position="floating">Senha</ion-label>
+            <ion-input [(ngModel)]="senha" placeholder="Digite uma senha" type="password"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Confirmar senha</ion-label>
+            <ion-input  [(ngModel)]="confirmarSenha" placeholder="Digite uma senha" type="password" (ionChange)="checarSenhas()"></ion-input>
+            <ion-text *ngIf="senha && !matchSenhas" color="danger">As senhas não são iguais!</ion-text>
+            <ion-text *ngIf="senha && matchSenhas" color="success">As senhas são iguais</ion-text>
+          </ion-item>
+
+
+        </ion-list>
+    </ion-card-content>
+
+    <ion-item [disabled]="!matchSenhas" button class="ion-button-light ion-text-center" color="azul" (click)="cadastrar()">
+      <ion-label color="light">
+        SALVAR
+      </ion-label>
+    </ion-item>
+    <ion-button expand="full" fill="clear" color="azul" routerLink="/login">
+      VOLTAR PARA LOGIN
+    </ion-button>
+
+  </ion-card>
+
+  
+</ion-content>
