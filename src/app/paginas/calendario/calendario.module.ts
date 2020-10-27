@@ -11,7 +11,8 @@ import { NgCalendarModule  } from 'ionic2-calendar';
 
 import { registerLocaleData } from '@angular/common';
 import ptBr from '@angular/common/locales/pt';
-registerLocaleData(ptBr);
+registerLocaleData(ptBr)
+ 
 
 @NgModule({
   imports: [
@@ -22,7 +23,7 @@ registerLocaleData(ptBr);
     CalendarioPageRoutingModule
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'pt-BR' }
+    { provide: LOCALE_ID, useValue: 'pt' }
   ],
   declarations: [CalendarioPage]
 })

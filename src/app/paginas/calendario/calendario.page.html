@@ -5,13 +5,70 @@
         <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
-
-    <ion-title>Meu calendário</ion-title>
-
+    <ion-title>
+      Calendário
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <div *ngIf="showAdicionarEvento" class="ion-padding">
+    <ion-item>
+      <ion-label><b>Título:</b></ion-label>
+      <ion-input type="text" placeholder="Título do evento" [(ngModel)]="novoEvento.titulo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label><b>Descrição:</b></ion-label>
+      <ion-input type="text" placeholder="Descrição do evento" [(ngModel)]="novoEvento.descricao"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label><b>Início</b></ion-label>
+      <ion-datetime doneText="OK" placeholder="Escolha a data de início" cancelText="Cancelar" displayFormat="DD/MM/YYYY" [(ngModel)]="novoEvento.dataInicio" pickerFormat="MMM DD YYYY HH:mm" [min]="dataMinima"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label><b>Fim</b></ion-label>
+      <ion-datetime doneText="OK" placeholder="Escolha a data de fim" cancelText="Cancelar" displayFormat="DD/MM/YYYY" [(ngModel)]="novoEvento.dataFim" pickerFormat="MMM DD YYYY HH:mm"[min]="dataMinima"></ion-datetime>
+    </ion-item>
+    <ion-button color="rosa" expand="block" (click)="addEvento()">Adicionar</ion-button>
+  </div>
+
+  <ion-row *ngIf="!showAdicionarEvento">
+    <ion-col size="2">
+      <ion-button fill="clear" (click)="anterior()">
+        <ion-icon name="arrow-back" slot="icon-only" color="rosa"></ion-icon>
+      </ion-button>
+    </ion-col>
+ 
+    <ion-col size="8" class="ion-text-center">
+      <h2>{{ mesAtual }}</h2>
+    </ion-col>
+ 
+    <ion-col size="2">
+      <ion-button fill="clear" (click)="proximo()">
+        <ion-icon name="arrow-forward" slot="icon-only" color="rosa"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <calendar *ngIf="!showAdicionarEvento" id="myCalendar"
+  [locale]="calendario.locale"
+  [eventSource]="todosEventos" 
+  [calendarMode]="calendario.visualizacao" 
+  [currentDate]="calendario.dataAtual" 
+  (onTitleChanged)="onViewTitleChanged($event)"
+  (onTimeSelected)="aoSelecionarData($event)" 
+  startHour="6"
+  endHour="20"
+  step="30"
+  startingDayWeek="1">
+</calendar>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button  (click)="forma()">
+    <ion-icon *ngIf="!showAdicionarEvento" name="add"></ion-icon>
+    <ion-icon *ngIf="showAdicionarEvento" name="close"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
 
 </ion-content>

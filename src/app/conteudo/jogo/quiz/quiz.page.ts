@@ -16,7 +16,7 @@ export class QuizPage implements OnInit {
   }
 
   comecar() {
-    this.router.navigate(['/perguntas']);
+    this.router.navigate(['/perguntas/pergunta1']);
   }
 
 }
