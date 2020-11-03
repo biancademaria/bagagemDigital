@@ -1,9 +1,110 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>espanha</ion-title>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home">
+        <ion-icon slot="icon-only" name="arrow-back" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Espanha</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="slides ion-margin-bottom">
+    <ion-slides [options]="options">
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div>
+              <img src="assets/img/salamanca.jpg">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+              <h3 class="ion-text-center">Univevrsidade de Salamanca</h3>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
 
-</ion-content>
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div>
+              <img src="assets/img/universidade.jpg">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <h3 class="ion-text-center">Univevrsidade de Salamanca</h3>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+  <div class="nome ion-margin-bottom">
+    <div class="ion-text-center">
+      <h2>Top Espanã</h2>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          O Top Espanã 2020 é um programa anual realizado pelo Santander Universidades que concede bolsas integrais 
+          para professores e alunos das universidades conveniadas.
+          <br> 
+          <br>
+          São ofertadas um total de 100 bolsas para professores e alunos em cursos de graduação
+           e pós-graduação de todo o Brasil. A bolsa oferece três semanas de curso de espanhol 
+           na Universidade de Salamanca, na Espanha. Além do idioma, os participantes ainda terão
+           interação com pessoas do mundo inteiro e contato imersivo na cultura espanhola.
+          <br>
+          <br>
+          As pessoas selecionadas recebem apoio financeiro que cobre passagens aéreas 
+          (idas e volta), alojamento estudantil com três refeições diárias, seguro de vida 
+          e saúde, curso de espanhol certificado pela Universidade de Salamanca, Material 
+          didático para o curso e alguns passeios culturais pelo país.
+          <br>
+          <br>
+
+          <img src="assets/img/igrejaconchas.jpg">
+          <ion-card-subtitle class="info ion-text-center">
+            <br>
+            Igreja de Clerecía ao lado da Casas das Conchas, em Salamanca
+          </ion-card-subtitle>
+
+          <h5>Como entrar?</h5>
+            Para poder se increver é necessário cumprir alguns pré-requisitos:
+          <br>
+          <br>
+          <li>
+            O candidato deve ter excelência acadêmica;
+          </li>
+          <br>
+          <br>
+          <li>
+            Preferência de vulnerabilidade social;
+          </li>
+          <br>
+          <br>
+          <li>
+            Frequência na instituição durante todo o processo até a realização do programa;
+          </li>
+          <br>
+         <li>
+          Cada instituição deverá divulgar o seu edital de seleção do programa onde deve 
+          constar os itens anteriores e os de responsabilidade da Universidade.
+         </li>
+         <br>
+           Um ponto interessante é que, diferentemente de muitas outras bolsas, a pessoa não 
+           precisa ter conhecimento da língua para se candidatar. As pessoas farão uma prova 
+           de nivelamento para que possam ser separados em turmas.
+         <br>
+         <br>
+           Se interessou pelo intercâmbio? no site oficial você pode encontrar ainda mais informações então não perca tempo, <a title="site oficial" href="becas-santander.com/pt/program/santander-top-espana-2020">acesse!</a>
+       </ion-row>
+    </ion-grid>
+  </ion-item>
+
+ </div>

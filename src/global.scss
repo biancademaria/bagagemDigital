@@ -59,5 +59,9 @@
     --ion-background-color: #ffffff;
 }
 
+.degrade {
+    --ion-background-color: linear-gradient(#12c2e9, #fc6ff9);
+}
+
 .monthview-primary-with-event { background-color: #ff1ffb!important; }
 .monthview-selected { background-color: #12c2e9 !important; }

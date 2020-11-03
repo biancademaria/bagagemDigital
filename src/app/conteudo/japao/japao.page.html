@@ -1,9 +1,109 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>japao</ion-title>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home">
+        <ion-icon slot="icon-only" name="arrow-back" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Japão</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="slides ion-margin-bottom">
+    <ion-slides [options]="options">
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div>
+              <img src="assets/img/japao.jpg">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+              <h3 class="ion-text-center">Eikan-Do (Quioto)</h3>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
 
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div>
+              <img src="assets/img/predio.jpg">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <h3 class="ion-text-center">Edifício Umeda Sky Building (Osaka)</h3>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+  <div class="nome ion-margin-bottom">
+    <div class="ion-text-center">
+      <h2>Bolsas Japonesas</h2>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          O Japão é um arquipélago (conjunto de várias ilhas) localizada ao leste da Ásia, 
+          tendo um território de cerca de 370 mil km² e pouco mais de 125 milhões de 
+          habitantes. Sua capital é Tóquio, no entanto, algumas outras cidades são visitadas 
+          pelos turistas, como Osaka, uma das cidades mais movimentadas do país; Kyoto, 
+          com seus templos característicos; e Hiroshima, a cidade que foi danificada por 
+          uma bomba atômica durante a Segunda Guerra Mundial.
+          <br> 
+          <br>
+          O governo japonês vem oferecendo vários tipos de bolsas para seus visitantes 
+          estrangeiros e para aqueles que se interessam em ir para o Japão para morar no 
+          país, sendo que existem bolsas para descendentes de japoneses (normalmente as 
+          mais comuns), mas também para os que não o são. Todos os anos, são oferecidas 
+          bolsas de Nível técnico, voltada para jovens entre 17 e 24 anos de idade que 
+          desejam entrar no mercado de trabalho, normalmente dentro da área de exatas, já 
+          que o foco do curso é a prática; bolsas para cursos profissionalizantes, onde a 
+          pessoa pode ir para o país para se especializar em sua área de interesse, voltada 
+          para a mesma faixa etária da bolsa anterior; graduação e pós-graduação, por exemplo.
+           No entanto, existem outras formas de ingresso, como pelo Ciências sem Fronteiras, 
+           um programa do governo brasileiro que, em parceria com outros países, promove bolsas 
+           de doutorado para quem aprecia e deseja estudar em terras japonesas. Há também o JET, 
+           que oferece intercâmbios voltados a trabalho para os brasileiros fluentes na língua 
+           japonesa e que desejariam trabalhar no país.
+          <br>
+          <br>
+          Alguns pontos turísticos muito atrativos no país são locais como o Monte Fuji, as cidades 
+          atacadas pelas bombas (Hiroshima e Nagasaki), a “cópia” da torre Eiffel, localizada em Tóquio, 
+          a torre de Tsutentaku, em Osaka, os templos religiosos espalhados por todo o país, as floradas 
+          de cerejeira (Sakuras, que acontecem durante a primavera), o Hanabi (festival de fogos de artifício 
+          que ocorre entre os meses de julho e agosto), entre outros.
+          <br>
+          <br>
+          <img src="assets/img/flors.gif">
+          <br>
+          <br>
+          De acordo com a embaixada japonesa no Brasil, existem diversos tipos de visto para ir para o Japão. O mais 
+          comum, claro, é o visto de turismo, conhecido como “Visto de múltiplas entradas”. No entanto, existem ao menos 
+          mais dez tipos diferentes de vistos, entre eles vistos específicos para descendentes de japoneses (mais 
+          informações: https://www.br.emb-japan.go.jp/itpr_pt/visto.html).
+          <br>
+          <br>
+          <h5>Fontes</h5>
+          https://brasilescola.uol.com.br/japao/informacoes-gerais-sobre-japao.htm
+          <br>
+          https://ideiasnamala.com/japao-a-lista-das-cidades-imperdiveis/
+          https://www.worldometers.info/world-population/japan-population/ (Acesso: 07/03/2020)
+          https://kotoba.com.br/estudar-no-japao/
+          https://www.estudarfora.org.br/intercambio-no-japao/
+          https://www.ci.com.br/guia-mundo/paises/japao
+          https://www.adventureclub.com.br/blog/dicas-de-viagem/quais-os-pontos-turisticos-mais-visitados-do-japao/
+          https://www.vistorapido.com/artigos/tipos-visto-japones/
+         </ion-row>
+      </ion-grid>
+    </ion-item>
+
+  </div>
 </ion-content>

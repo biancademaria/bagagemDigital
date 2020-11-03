@@ -66,7 +66,7 @@ const routes: Routes = [
     loadChildren: () => import('./conteudo/jogo/perguntas/perguntas.module').then( m => m.PerguntasPageModule)
   },
   {
-    path: '**',
+    path: 'pagina-nao-encontrada',
     loadChildren: () => import('./pagina-nao-encontrada/pagina-nao-encontrada.module').then( m => m.PaginaNaoEncontradaPageModule)
   },
 ];

@@ -1,37 +1,37 @@
-<ion-content class="ion-padding" color="azul">
+<ion-content class="ion-padding degrade">
 
- <!-- <div class="ion-text-center logo">
-    <img src="assets/iconpreto.png">
-  </div> ADICIONAR NOS ASSETS!!!-->
+ <div class="ion-text-center logo">
+    <img src="assets/colorido.png">
+  </div>
 
-  <ion-card>
+  <ion-card color="light">
     <ion-card-header>
       <ion-card-title style=" text-align: center;"  color="azul">Cadastro</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
       <ion-list>
-          <ion-item>
+          <ion-item color="light">
             <ion-label position="floating">Nome de Usuário</ion-label>
             <ion-input [(ngModel)]="nomeUsuario" placeholder="Digite seu nome" type="text"></ion-input>
           </ion-item>
     
-          <ion-item>
+          <ion-item color="light">
             <ion-label position="floating">Nome Completo</ion-label>
             <ion-input [(ngModel)]="nomeCompleto" placeholder="Digite seu nome completo" type="text"></ion-input>
           </ion-item>
     
-          <ion-item>
+          <ion-item color="light">
             <ion-label position="floating">E-mail</ion-label>
             <ion-input [(ngModel)]="email" placeholder="Digite seu e-mail" type="text"></ion-input>
           </ion-item>
     
-          <ion-item>
+          <ion-item color="light">
             <ion-label position="floating">Senha</ion-label>
             <ion-input [(ngModel)]="senha" placeholder="Digite uma senha" type="password"></ion-input>
           </ion-item>
 
-          <ion-item>
+          <ion-item color="light">
             <ion-label position="floating">Confirmar senha</ion-label>
             <ion-input  [(ngModel)]="confirmarSenha" placeholder="Digite uma senha" type="password" (ionChange)="checarSenhas()"></ion-input>
             <ion-text *ngIf="senha && !matchSenhas" color="danger">As senhas não são iguais!</ion-text>
