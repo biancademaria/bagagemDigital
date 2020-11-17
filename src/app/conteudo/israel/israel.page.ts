@@ -12,4 +12,10 @@ export class IsraelPage implements OnInit {
   ngOnInit() {
   }
 
+  options = {
+    centeredSlides: true,
+    loop: true,
+    spaceBetween: -14,
+  }
+
 }

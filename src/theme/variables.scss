@@ -3,6 +3,27 @@
 
 /** Ionic CSS Variables **/
 :root {
+  --ion-color-rosado: #ff7bf4;
+  --ion-color-rosado-rgb: 255,123,244;
+  --ion-color-rosado-contrast: #000000;
+  --ion-color-rosado-contrast-rgb: 0,0,0;
+  --ion-color-rosado-shade: #e06cd7;
+  --ion-color-rosado-tint: #ff88f5;
+  
+  --ion-color-roxo: #cc42ee;
+  --ion-color-roxo-rgb: 204,66,238;
+  --ion-color-roxo-contrast: #ffffff;
+  --ion-color-roxo-contrast-rgb: 255,255,255;
+  --ion-color-roxo-shade: #b43ad1;
+  --ion-color-roxo-tint: #d155f0;
+
+  --ion-color-laranjinha: #f5b56d;
+  --ion-color-laranjinha-rgb: 245,181,109;
+  --ion-color-laranjinha-contrast: #000000;
+  --ion-color-laranjinha-contrast-rgb: 0,0,0;
+  --ion-color-laranjinha-shade: #d89f60;
+  --ion-color-laranjinha-tint: #f6bc7c;
+
   --ion-color-rosapink: #fb23a1;
   --ion-color-rosapink-rgb: 251,35,161;
   --ion-color-rosapink-contrast: #ffffff;
@@ -147,6 +168,33 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
+.ion-color-laranjinha {
+  --ion-color-base: var(--ion-color-laranjinha);
+  --ion-color-base-rgb: var(--ion-color-laranjinha-rgb);
+  --ion-color-contrast: var(--ion-color-laranjinha-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-laranjinha-contrast-rgb);
+  --ion-color-shade: var(--ion-color-laranjinha-shade);
+  --ion-color-tint: var(--ion-color-laranjinha-tint);
+}
+
+.ion-color-rosado {
+  --ion-color-base: var(--ion-color-rosado);
+  --ion-color-base-rgb: var(--ion-color-rosado-rgb);
+  --ion-color-contrast: var(--ion-color-rosado-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-rosado-contrast-rgb);
+  --ion-color-shade: var(--ion-color-rosado-shade);
+  --ion-color-tint: var(--ion-color-rosado-tint);
+}
+
+.ion-color-roxo {
+  --ion-color-base: var(--ion-color-roxo);
+  --ion-color-base-rgb: var(--ion-color-roxo-rgb);
+  --ion-color-contrast: var(--ion-color-roxo-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-roxo-contrast-rgb);
+  --ion-color-shade: var(--ion-color-roxo-shade);
+  --ion-color-tint: var(--ion-color-roxo-tint);
+}
+
 .ion-color-rosapink {
   --ion-color-base: var(--ion-color-rosapink);
   --ion-color-base-rgb: var(--ion-color-rosapink-rgb);
